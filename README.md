@@ -1,2 +1,2 @@
-# my_django_web_page
-.
+# my_django_first_page
+This is a training

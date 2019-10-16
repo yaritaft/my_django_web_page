@@ -1,0 +1,9 @@
+#Local db
+db.sqlite3
+
+#virtualenv
+venv/
+env/
+
+#cache
+*__pycache__*
