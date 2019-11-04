@@ -9,9 +9,16 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
-
 import os
-
+from dotenv import load_dotenv
+load_dotenv()
+SITE_BASE_URL=os.getenv("SITE_BASE_URL")
+DICT_URLS={
+    "SITE_BASE_URL":SITE_BASE_URL,
+    "CV_URL":SITE_BASE_URL,
+    "ABOUT_ME_URL":SITE_BASE_URL+"/about_me",
+    "LIGHT_MODE":SITE_BASE_URL
+}
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -40,7 +47,8 @@ INSTALLED_APPS = [
     'cv.apps.CvConfig',
     'courses.apps.CoursesConfig',
     'useful_links.apps.UsefulLinksConfig',
-    'aboutme.apps.AboutmeConfig'
+    'aboutme.apps.AboutmeConfig',
+    'common_resources.apps.CommonResourcesConfig'
 ]
 
 MIDDLEWARE = [

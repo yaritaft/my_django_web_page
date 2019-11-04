@@ -1,10 +1,10 @@
-{% extends "cv/base.html" %}
+{% extends "common_resources/base.html" %}
 {% load static %}
 {% block content %}
   <div class="container">        
       <section>
         <div>
-          <div><img src="{% static "cv/images/yari_taft.jpg" %}" alt="avatar" class="avatar" id="profile_pic"></div>
+          <div><img src="{% static "cv/images/second-photo-no-background.png" %}" alt="avatar" class="avatar" id="profile_pic"></div>
         </div>
         <div>
           <div class="my-name">Yari Ivan Taft</div>
@@ -38,14 +38,16 @@
                 Oct-2018 - Present
               </div>
             </div> <!-- end job-title container -->
-            <p>Accomplishments:</br>
-                -.</br>
-                -.</br>
-                -.</br>
-                -.</br>
-                -.
-                </br></br>
-                <u>Tools:</u> Python, Javascript, Postgre SQL, Heroku, Github <u>Methodology:</u> Agile</p>
+            <p>Responsibilities:</br>
+                -Server side rendering the web app.</br>
+                -Data modeling though Django ORM.</br>
+                -ETL information from different APIs such as Google Calendar, Salesloft and Salesforce..</br>
+                -Deployment through Heroku.</br>
+                -Handle asynchronous tasks using Celery an Redis as message broker.
+                -Add dynamic behaviour using Vanilla Javascript (Chart JS, Bootstrap grid Tables, etc).
+              </br></p>
+            </br>
+            <u>Tools:</u> Python (Django Framework), Javascript, Postgre SQL, Heroku, Github <u>Methodology:</u> Agile</p>
           </div> <!-- end job -->
           <div class="job">
               <div class="job-title-container">
