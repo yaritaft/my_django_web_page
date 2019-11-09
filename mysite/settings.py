@@ -41,7 +41,7 @@ SECRET_KEY = '8yrzcb+uvem9h8q8!s-*()*o7hz3d$qplj$=6gnoe-u57ka=b('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'https://afternoon-tundra-88183.herokuapp.com','afternoon-tundra-88183.herokuapp.com','yaritaft.com','https://yaritaft.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'https://afternoon-tundra-88183.herokuapp.com','afternoon-tundra-88183.herokuapp.com','yaritaft.com','https://yaritaft.com','www.yaritaft.com']
 
 
 # Application definition
