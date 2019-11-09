@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.conf import settings
 DICT_URLS=settings.DICT_URLS
-# Create your views here.
 def cv(request):
     DICT_URLS["dark_mode"]=False
     return render(request,'cv/cv.html',DICT_URLS)
