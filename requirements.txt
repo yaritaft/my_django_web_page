@@ -5,7 +5,7 @@ attrs==19.3.0
 black==19.10b0
 cfgv==2.0.1
 Click==7.0
-Django==2.2.8
+Django
 entrypoints==0.3
 flake8==3.7.9
 gunicorn==19.9.0
