@@ -28,7 +28,7 @@ class User(AbstractUser):
 
 
 class Tag(models.Model):
-    keyword = models.CharField(null=False, unique=True)
+    keyword = models.CharField(null=False, unique=True, max_length=100)
 
 
 class BlogPost(models.Model):
