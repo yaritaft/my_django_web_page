@@ -13,6 +13,10 @@ exclude = '''
     | \.mypy_cache
     | \.tox
     | \.venv
+    | \.__pycache__
+    | __pycache__
+    | cli-ve
+    | \.cli-ve
     | _build
     | buck-out
     | build

@@ -9,3 +9,5 @@ env/
 #cache
 *__pycache__*
 .directory
+*cli_ve/*
+cli-ve/*
