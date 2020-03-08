@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 import os
 from dotenv import load_dotenv
+import dj_database_url
+
 
 load_dotenv()
 SITE_BASE_URL = os.getenv("SITE_BASE_URL")
@@ -64,6 +66,7 @@ INSTALLED_APPS = [
     "useful_links.apps.UsefulLinksConfig",
     "aboutme.apps.AboutmeConfig",
     "common_resources.apps.CommonResourcesConfig",
+    "blog.apps.BlogConfig",
 ]
 
 MIDDLEWARE = [
@@ -101,12 +104,8 @@ WSGI_APPLICATION = "mysite.wsgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
-    }
+    "default": dj_database_url.config(conn_max_age=600, ssl_require=True)
 }
 
 
