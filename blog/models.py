@@ -27,7 +27,7 @@ class User(AbstractUser):
         )
 
 
-class Tag(models.Model):
+class BlogTag(models.Model):
     keyword = models.CharField(null=False, unique=True, max_length=100)
 
 
@@ -37,7 +37,7 @@ class BlogPost(models.Model):
     updated_date = models.DateTimeField(null=True, blank=True)
     content = models.TextField(null=False)
     hidden = models.BooleanField(default=False, null=False)
-    tags = models.ManyToManyField(Tag, related_name="post_tags")
+    tags = models.ManyToManyField(BlogTag, related_name="post_tags")
     author = models.ForeignKey(
         User, related_name="post_author", on_delete=models.CASCADE
     )

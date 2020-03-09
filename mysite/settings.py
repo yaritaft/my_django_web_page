@@ -67,6 +67,7 @@ INSTALLED_APPS = [
     "aboutme.apps.AboutmeConfig",
     "common_resources.apps.CommonResourcesConfig",
     "blog.apps.BlogConfig",
+    "books.apps.BooksConfig",
 ]
 
 MIDDLEWARE = [
