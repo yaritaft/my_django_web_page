@@ -4,13 +4,10 @@
     {% for book in books %}
     <div class="container">
         <div class="card">  
-            <h2>{{ book.title }} - Author: {{ book.author }} - Edition: {{ book.edition }} </h2>
-            <br>
-            <h5>My rate: {{ book.rate }}</h5>
-            <br>
-            <h5>My summary:</h5>
+            <h2>{{ book.title }} - Author: {{ book.author }}</h2>
             <p>{{ book.summary }}</p>
             <br>
+            <b>My rate: {{ book.rate }}</b>
         </div>
     </div>
     {% endfor %}
