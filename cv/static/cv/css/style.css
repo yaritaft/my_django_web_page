@@ -103,6 +103,23 @@ img.avatar {
   margin-right: 6px;
 }
 
+.row-cv {
+  display: flex;
+}
+
+.column-cv-left {
+  float: left;
+	padding: 10px;
+}
+
+.column-cv-center {
+  flex: left;
+}
+
+.column-cv-right {
+  flex: left;
+}
+
 /***********************************
 * =Education
 ***********************************/
