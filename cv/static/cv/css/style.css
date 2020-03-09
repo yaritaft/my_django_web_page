@@ -78,7 +78,7 @@ img.avatar {
 }
 
 .my-name {
-  font-size: 48px;
+  font-size: 44px;
   line-height: 1;
 }
 
@@ -97,6 +97,19 @@ img.avatar {
   display: flex;
   align-items: center;
   flex: 1;
+}
+
+.link-text {
+  color: #E0FFFF;
+  padding: 8px;
+}
+
+.link-text:hover {
+  color: #E0FFFF;
+}
+
+.link-text:visited {
+  color: #E0FFFF;
 }
 
 .link-item svg {
