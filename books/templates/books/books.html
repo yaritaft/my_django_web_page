@@ -2,13 +2,15 @@
 {% load static %}
 {% block content %}
     {% for book in books %}
-    <div class="card">  
-        <h2>{{ book.title }} - {{ book.author }} </h2>
-        <br>
-        <h5>{{ book.rate }}</h5>
-        <br>
-        <p>{{ book.summary }}</p>
-        <br>
+    <div class="container">
+        <div class="card">  
+            <h2>{{ book.title }} - {{ book.author }} </h2>
+            <br>
+            <h5>{{ book.rate }}</h5>
+            <br>
+            <p>{{ book.summary }}</p>
+            <br>
+        </div>
     </div>
     {% endfor %}
 {% endblock content %}
