@@ -1,0 +1,14 @@
+{% extends "common_resources/base.html" %}
+{% load static %}
+{% block content %}
+    {% for book in books %}
+    <div class="card">  
+        <h2>{{ book.title }} - {{ book.author }} </h2>
+        <br>
+        <h5>{{ book.rate }}</h5>
+        <br>
+        <p>{{ book.summary }}</p>
+        <br>
+    </div>
+    {% endfor %}
+{% endblock content %}
