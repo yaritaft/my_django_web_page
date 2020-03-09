@@ -17,7 +17,7 @@ import dj_database_url
 load_dotenv()
 SITE_BASE_URL = os.getenv("SITE_BASE_URL")
 DICT_URLS = {
-    "CV_URL": SITE_BASE_URL + "/cv",
+    "CV_URL": SITE_BASE_URL,
     "ABOUT_ME_URL": SITE_BASE_URL + "/about_me",
     "BOOKS_URL": SITE_BASE_URL + "/books",
 }

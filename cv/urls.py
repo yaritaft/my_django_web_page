@@ -1,6 +1,6 @@
 from django.urls import path, include
-from . import views
+from cv.views import cv_dark
 
 urlpatterns = [
-    path("", views.cv_dark, name="CV-Dark"),
+    path("", cv_dark, name="CV-Dark-Index"),
 ]
