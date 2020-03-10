@@ -4,7 +4,8 @@
     {% for book in books %}
     <div class="container">
         <div class="card">  
-            <h2>{{ book.title }} - Author: {{ book.author }}</h2>
+            <h3><b>{{ book.title }}</b></h3>
+            Author: {{ book.author }}</br>
             <p>{{ book.summary }}</p>
             <b>My rate: {{ book.rate }}</b>
         </div>

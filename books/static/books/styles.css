@@ -4,3 +4,8 @@
     margin-top: 20px;
     color: black;
   }
+
+.book-title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
