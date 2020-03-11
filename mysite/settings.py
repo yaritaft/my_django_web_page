@@ -15,12 +15,6 @@ import dj_database_url
 
 
 load_dotenv()
-SITE_BASE_URL = os.getenv("SITE_BASE_URL")
-DICT_URLS = {
-    "CV_URL": SITE_BASE_URL,
-    "ABOUT_ME_URL": SITE_BASE_URL + "/about_me",
-    "BOOKS_URL": SITE_BASE_URL + "/books",
-}
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -67,6 +61,7 @@ INSTALLED_APPS = [
     "common_resources.apps.CommonResourcesConfig",
     "blog.apps.BlogConfig",
     "books.apps.BooksConfig",
+    "youtube.apps.YoutubeConfig",
 ]
 
 MIDDLEWARE = [
@@ -145,4 +140,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
+
+STATICFILES_FINDERS = [
+    "django.contrib.staticfiles.finders.FileSystemFinder",
+    "django.contrib.staticfiles.finders.AppDirectoriesFinder",
+]
+
 STATIC_URL = "/static/"
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static", "youtube"),
+]
