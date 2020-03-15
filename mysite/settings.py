@@ -37,11 +37,13 @@ DEBUG = os.getenv("DEBUG_MODE") == "True"
 
 ALLOWED_HOSTS = [
     "127.0.0.1",
+    "localhost",
     "https://afternoon-tundra-88183.herokuapp.com",
     "afternoon-tundra-88183.herokuapp.com",
     "yaritaft.com",
     "https://yaritaft.com",
     "www.yaritaft.com",
+    "0.0.0.0",
 ]
 
 
