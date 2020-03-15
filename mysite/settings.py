@@ -151,5 +151,13 @@ STATICFILES_FINDERS = [
 STATIC_URL = "/static/"
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static", "youtube"),
+    os.path.join(
+        BASE_DIR,
+        "static",
+        "youtube",
+        "cv",
+        "aboutme",
+        "books",
+        "common_resources",
+    ),
 ]
