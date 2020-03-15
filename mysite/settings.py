@@ -30,7 +30,6 @@ STATICFILES_DIRS = (
     os.path.join("cv", "static"),
     os.path.join("aboutme", "static"),
     os.path.join("books", "static"),
-    os.path.join("common_resources", "static"),
 )
 
 # Quick-start development settings - unsuitable for production
@@ -163,7 +162,6 @@ STATICFILES_DIRS = [
     os.path.join("cv", "static"),
     os.path.join("aboutme", "static"),
     os.path.join("books", "static"),
-    os.path.join("common_resources", "static"),
 ]
 
 
