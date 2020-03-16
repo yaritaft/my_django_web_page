@@ -7,3 +7,4 @@ WORKDIR /app
 RUN pip install --upgrade pip==19.3
 RUN pip install -r requirements.txt
 RUN python manage.py collectstatic --no-input 
+CMD ["gunicorn", "-w", "1", "-k", "gevent", "-b", "0.0.0.0:8000", "mysite.wsgi:application"]
