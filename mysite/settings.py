@@ -160,6 +160,7 @@ STATIC_URL = "/static/"
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
     os.path.join(BASE_DIR, "youtube", "static"),
+    os.path.join(BASE_DIR, "youtube", "static", "youtube", "css"),
     os.path.join(BASE_DIR, "cv", "static"),
     os.path.join(BASE_DIR, "aboutme", "static"),
     os.path.join(BASE_DIR, "books", "static"),
