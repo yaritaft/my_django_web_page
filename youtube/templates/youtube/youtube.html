@@ -2,6 +2,7 @@
 {% load static %}
 {% block content %}
 {% for video_url in video_urls %}
+<link rel="stylesheet" href="{% static "/ystyles.css" %}">
 <div class="iframe-container">
     <center>
         <iframe width="560" height="315" src="{{ video_url }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
