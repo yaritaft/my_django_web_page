@@ -108,10 +108,19 @@ WSGI_APPLICATION = "mysite.wsgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
+# DATABASES = {
+#     "default": dj_database_url.config(conn_max_age=600, ssl_require=True)
+# }
 DATABASES = {
-    "default": dj_database_url.config(conn_max_age=600, ssl_require=True)
+    "default": {
+        "ENGINE": os.getenv("DB_ENGINE"),
+        "NAME": os.getenv("DB_NAME"),
+        "USER": os.getenv("DB_USER"),
+        "HOST": os.getenv("DB_HOST"),
+        "PASSWORD": os.getenv("DB_PASSWORD", None),
+        "PORT": int(os.getenv("DB_PORT")),
+    }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
@@ -167,14 +176,14 @@ STATICFILES_DIRS = [
 ]
 
 
-LOGGING = {
-    "version": 1,
-    "disable_existing_loggers": False,
-    "handlers": {"console": {"class": "logging.StreamHandler"}},
-    "loggers": {
-        "django": {
-            "handlers": ["console"],
-            "level": os.getenv("DJANGO_LOG_LEVEL", "DEBUG"),
-        },
-    },
-}
+# LOGGING = {
+#     "version": 1,
+#     "disable_existing_loggers": False,
+#     "handlers": {"console": {"class": "logging.StreamHandler"}},
+#     "loggers": {
+#         "django": {
+#             "handlers": ["console"],
+#             "level": os.getenv("DJANGO_LOG_LEVEL", "DEBUG"),
+#         },
+#     },
+# }
