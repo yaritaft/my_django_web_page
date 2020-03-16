@@ -4,11 +4,9 @@
 <link rel="stylesheet" href="{% static "youtube/css/youtube/youtube_style.css" %}">
 {% for video_url in video_urls %}
 <div class="iframe-container">
-    <div class="youtube_video">
-        <center>
-            <iframe width="560" height="315" src="{{ video_url }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </center>
-    </div>
+    <center>
+        <iframe width="560" height="315" src="{{ video_url }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </center>
 </div>
 {% endfor %}
 {% endblock content %}
