@@ -26,7 +26,7 @@ STATIC_URL = "/static/"
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
-    os.path.join(BASE_DIR, "static", "youtube"),
+    os.path.join(BASE_DIR, "youtube", "static"),
     os.path.join(BASE_DIR, "cv", "static"),
     os.path.join(BASE_DIR, "aboutme", "static"),
     os.path.join(BASE_DIR, "books", "static"),
@@ -158,7 +158,7 @@ STATIC_URL = "/static/"
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
-    os.path.join(BASE_DIR, "static", "youtube"),
+    os.path.join(BASE_DIR, "youtube", "static"),
     os.path.join(BASE_DIR, "cv", "static"),
     os.path.join(BASE_DIR, "aboutme", "static"),
     os.path.join(BASE_DIR, "books", "static"),
