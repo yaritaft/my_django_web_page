@@ -21,3 +21,5 @@ toml==0.10.0
 typed-ast==1.4.1
 whitenoise==5.0.1
 gevent
+psycopg2-binary==2.8.3
+

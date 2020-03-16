@@ -111,14 +111,17 @@ WSGI_APPLICATION = "mysite.wsgi.application"
 # DATABASES = {
 #     "default": dj_database_url.config(conn_max_age=600, ssl_require=True)
 # }
+
 DATABASES = {
     "default": {
-        "ENGINE": os.getenv("DB_ENGINE"),
-        "NAME": os.getenv("DB_NAME"),
-        "USER": os.getenv("DB_USER"),
-        "HOST": os.getenv("DB_HOST"),
-        "PASSWORD": os.getenv("DB_PASSWORD", None),
-        "PORT": int(os.getenv("DB_PORT")),
+        "ENGINE": os.environ.get("SQL_ENGINE", "django.db.backends.sqlite3"),
+        "NAME": os.environ.get(
+            "SQL_DATABASE", os.path.join(BASE_DIR, "db.sqlite3")
+        ),
+        "USER": os.environ.get("SQL_USER", "user"),
+        "PASSWORD": os.environ.get("SQL_PASSWORD", "password"),
+        "HOST": os.environ.get("SQL_HOST", "localhost"),
+        "PORT": os.environ.get("SQL_PORT", "5432"),
     }
 }
 
