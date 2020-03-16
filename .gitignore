@@ -8,3 +8,4 @@ env/
 .directory
 *cli_ve/*
 cli-ve/*
+autotry.sh
