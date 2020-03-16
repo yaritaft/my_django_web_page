@@ -8,7 +8,6 @@ services:
 
   web:
     build: .
-    command: python manage.py migrate
     command: gunicorn -w 1 -k gevent -b 0.0.0.0:8000 mysite.wsgi
     volumes:
       - .:/code
