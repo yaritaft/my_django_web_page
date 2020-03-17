@@ -29,6 +29,7 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "cv", "static"),
     os.path.join(BASE_DIR, "aboutme", "static"),
     os.path.join(BASE_DIR, "books", "static"),
+    os.path.join(BASE_DIR, "youtube", "static"),
 )
 
 # Quick-start development settings - unsuitable for production
@@ -158,6 +159,7 @@ STATIC_URL = "/static/"
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
     os.path.join(BASE_DIR, "cv", "static"),
+    os.path.join(BASE_DIR, "youtube", "static"),
     os.path.join(BASE_DIR, "aboutme", "static"),
     os.path.join(BASE_DIR, "books", "static"),
 ]
