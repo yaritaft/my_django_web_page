@@ -4,7 +4,7 @@ services:
   web:
     network_mode: host
     build: .
-    command: gunicorn -w 1 -k gevent -b 0.0.0.0 mysite.wsgi
+    command: gunicorn -w 1 -b 0.0.0.0 mysite.wsgi
     volumes:
       - .:/usr/src/app/
     env_file:
