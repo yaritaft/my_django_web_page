@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  web:
+    network_mode: host
+    build: .
+    command: gunicorn -w 1 -k gevent -b 0.0.0.0 mysite.wsgi
+    volumes:
+      - .:/usr/src/app/
+    ports:
+      - 8000:8000
+    env_file:
+      - ./.env
