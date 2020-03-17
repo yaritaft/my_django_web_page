@@ -20,5 +20,4 @@ RUN pip install -r requirements.txt
 # copy project
 COPY . /usr/src/app/
 #CMD ["gunicorn","-w","1","-k","gevent","-b","0.0.0.0", "mysite.wsgi"]
-#CMD ["gunicorn","-w","1","mysite.wsgi"]
-CMD ["python","manage.py","runserver"]
+CMD ["gunicorn","-w","1","mysite.wsgi"]
