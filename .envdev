@@ -1,0 +1,5 @@
+SITE_BASE_URL=http://127.0.0.1:8000
+DEBUG_MODE=True
+DATABASE_URL=postgresql://myuser:mypass@0.0.0.0:5432/my_django_page
+SECRET_KEY=foo
+DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]
