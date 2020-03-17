@@ -26,7 +26,6 @@ STATIC_URL = "/static/"
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
-    os.path.join(BASE_DIR, "youtube", "static", "youtube", "css"),
     os.path.join(BASE_DIR, "cv", "static"),
     os.path.join(BASE_DIR, "aboutme", "static"),
     os.path.join(BASE_DIR, "books", "static"),
@@ -112,19 +111,6 @@ DATABASES = {
     "default": dj_database_url.config(conn_max_age=600, ssl_require=True)
 }
 
-# DATABASES = {
-#     "default": {
-#         "ENGINE": os.environ.get("SQL_ENGINE", "django.db.backends.sqlite3"),
-#         "NAME": os.environ.get(
-#             "SQL_DATABASE", os.path.join(BASE_DIR, "db.sqlite3")
-#         ),
-#         "USER": os.environ.get("SQL_USER", "user"),
-#         "PASSWORD": os.environ.get("SQL_PASSWORD", "password"),
-#         "HOST": os.environ.get("SQL_HOST", "localhost"),
-#         "PORT": os.environ.get("SQL_PORT", "5432"),
-#     }
-# }
-
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
@@ -164,15 +150,13 @@ USE_TZ = True
 
 STATICFILES_FINDERS = [
     "django.contrib.staticfiles.finders.FileSystemFinder",
-    # "django.contrib.staticfiles.finders.AppDirectoriesFinder",
+    "django.contrib.staticfiles.finders.AppDirectoriesFinder",
 ]
 
 STATIC_URL = "/static/"
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
-    os.path.join(BASE_DIR, "youtube", "static"),
-    os.path.join(BASE_DIR, "youtube", "static", "youtube", "css"),
     os.path.join(BASE_DIR, "cv", "static"),
     os.path.join(BASE_DIR, "aboutme", "static"),
     os.path.join(BASE_DIR, "books", "static"),
