@@ -1,4 +1,5 @@
  #!/bin/bash
+ rm -r staticfiles
  python manage.py collectstatic --noinput
  git add .
  git commit -m "$1"
