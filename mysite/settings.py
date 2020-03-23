@@ -64,10 +64,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "cv.apps.CvConfig",
-    "courses.apps.CoursesConfig",
-    "useful_links.apps.UsefulLinksConfig",
     "aboutme.apps.AboutmeConfig",
-    "common_resources.apps.CommonResourcesConfig",
     "blog.apps.BlogConfig",
     "books.apps.BooksConfig",
     "youtube.apps.YoutubeConfig",
@@ -98,7 +95,14 @@ ROOT_URLCONF = "mysite.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [
+            os.path.join(BASE_DIR, "templates"),
+            os.path.join(BASE_DIR, "cv", "templates"),
+            os.path.join(BASE_DIR, "youtube", "templates"),
+            os.path.join(BASE_DIR, "aboutme", "templates"),
+            os.path.join(BASE_DIR, "books", "templates"),
+            os.path.join(BASE_DIR, "suggestions", "templates"),
+        ],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -160,16 +164,6 @@ USE_TZ = True
 STATICFILES_FINDERS = [
     "django.contrib.staticfiles.finders.FileSystemFinder",
     # "django.contrib.staticfiles.finders.AppDirectoriesFinder",
-]
-
-STATIC_URL = "/static/"
-
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
-    os.path.join(BASE_DIR, "cv", "static"),
-    os.path.join(BASE_DIR, "youtube", "static"),
-    os.path.join(BASE_DIR, "books", "static"),
-    os.path.join(BASE_DIR, "suggestions", "static"),
 ]
 
 if DEBUG is not True:
