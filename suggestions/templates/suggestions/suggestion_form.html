@@ -1,6 +1,13 @@
 {% extends "common_resources/base.html" %}
 {% load static %}
 {% block content %}
+<script type="text/javascript">
+    var onloadCallback = function() {
+      grecaptcha.render('html_element', {
+        'sitekey' : '6LdrO-MUAAAAACdtR4x7snFFszRF3ESQibMUzbIq'
+      });
+    };
+  </script>
 <div class="container">
     {% if error_message %}
         <h3>Error message: {{ error_message }} You can try again.</h3>
@@ -9,8 +16,10 @@
 
     <form method="POST">{% csrf_token %}
         {{ form|crispy }}
-        <div class="g-recaptcha" data-sitekey="6LdrO-MUAAAAACdtR4x7snFFszRF3ESQibMUzbIq"></div>
         <input type='submit' value='Save' />
     </form>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+    async defer>
+</script>
 </div>
 {% endblock %}
