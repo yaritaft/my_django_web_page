@@ -1,0 +1,16 @@
+{% extends "common_resources/base.html" %}
+{% load static %}
+{% block content %}
+<div class="container">
+    {% if error_message %}
+        <h3>Error message: {{ error_message }} You can try again.</h3>
+    {% endif %}
+    {% load crispy_forms_tags %}
+
+    <form method='post'>{% csrf_token %}
+        {{ form|crispy }}
+        <div class="g-recaptcha" data-sitekey="6LdrO-MUAAAAACdtR4x7snFFszRF3ESQibMUzbIq"></div>
+        <input type='submit' value='Save' />
+    </form>
+</div>
+{% endblock %}

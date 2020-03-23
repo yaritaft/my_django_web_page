@@ -29,6 +29,7 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "cv", "static"),
     os.path.join(BASE_DIR, "books", "static"),
     os.path.join(BASE_DIR, "youtube", "static"),
+    os.path.join(BASE_DIR, "suggestions", "static"),
 )
 
 # Quick-start development settings - unsuitable for production
@@ -70,7 +71,11 @@ INSTALLED_APPS = [
     "blog.apps.BlogConfig",
     "books.apps.BooksConfig",
     "youtube.apps.YoutubeConfig",
+    "suggestions.apps.SuggestionsConfig",
+    "crispy_forms",
 ]
+
+CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -160,6 +165,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "cv", "static"),
     os.path.join(BASE_DIR, "youtube", "static"),
     os.path.join(BASE_DIR, "books", "static"),
+    os.path.join(BASE_DIR, "suggestions", "static"),
 ]
 
 if DEBUG is not True:

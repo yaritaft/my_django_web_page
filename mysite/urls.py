@@ -22,4 +22,5 @@ urlpatterns = [
     path("cv/", include("cv.urls"), name="cv"),
     path("about_me/", include("aboutme.urls"), name="about_me"),
     path("books/", include("books.urls"), name="books"),
+    path("suggestions/", include("suggestions.urls"), name="suggestions"),
 ]
