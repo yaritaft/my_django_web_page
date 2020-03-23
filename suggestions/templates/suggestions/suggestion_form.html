@@ -15,6 +15,7 @@
     {% load crispy_forms_tags %}
 
     <form method="POST">{% csrf_token %}
+        <div id="html_element"></div>
         {{ form|crispy }}
         <input type='submit' value='Save' />
     </form>
