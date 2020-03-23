@@ -3,7 +3,7 @@ from django.utils import timezone
 
 
 class Suggestion(models.Model):
-    created_date = models.DateField(blank=True, default=timezone.now)
+    created_date = models.DateTimeField(blank=True, default=timezone.now)
     suggestion_text = models.TextField()
     contact_email = models.EmailField()
 
