@@ -242,6 +242,7 @@ img.avatar {
 ***********************************/
 
 .download-button {
+    width: 30%;
     height: auto;
     display: block;
     margin-left: auto;
