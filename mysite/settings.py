@@ -73,9 +73,17 @@ INSTALLED_APPS = [
     "youtube.apps.YoutubeConfig",
     "suggestions.apps.SuggestionsConfig",
     "crispy_forms",
+    "captcha",
 ]
 
 CRISPY_TEMPLATE_PACK = "bootstrap4"
+RECAPTCHA_PROXY = {
+    "http": "http://127.0.0.1:8000",
+    "https": "https://127.0.0.1:8000",
+}
+RECAPTCHA_DOMAIN = "www.recaptcha.net"
+RECAPTCHA_PRIVATE_KEY = os.getenv("GOOGLE_RECAPTCHA_SECRET_KEY")
+RECAPTCHA_PUBLIC_KEY = os.getenv("GOOGLE_RECAPTCHA_SITE_KEY")
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",

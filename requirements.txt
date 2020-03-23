@@ -22,4 +22,6 @@ typed-ast==1.4.1
 whitenoise==5.0.1
 psycopg2-binary==2.8.3
 django-crispy-forms==1.9.0
+django-recaptcha==2.0.6
+
 
