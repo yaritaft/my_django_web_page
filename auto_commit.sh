@@ -1,7 +1,6 @@
 #!/bin/bash
 cat .env > .envdev 
-rm -r staticfiles
-python manage.py collectstatic --noinput
+python3.7 manage.py collectstatic --noinput
 git add .
 git commit -m "$1"
 git add .
