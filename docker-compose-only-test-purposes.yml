@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_USER=myuser
+      - POSTGRES_PASSWORD=mypass
+      - POSTGRES_DB=my_django_page_2
+    ports:
+      - 5432:5432
+    volumes:
+      - ./local_test_data/postgres:/var/lib/postgresql/data
+  web:
+    build: .
+    command: gunicorn -w 1 mysite.wsgi
+    volumes:
+      - .:/usr/src/app/
+    env_file:
+      - ./.env
+    network_mode: host
+    depends_on:
+      - db
