@@ -1,0 +1,12 @@
+.card {
+  color: black;
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 25 px;
+}
+
+.book-title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
