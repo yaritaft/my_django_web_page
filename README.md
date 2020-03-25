@@ -8,6 +8,7 @@
 - [Installation](#Installation)
 - [How to run the APP](#how-to-run-the-app)
 - [How to stop the APP](#how-to-stop-the-app)
+- [How to run db and app separated](#how-to-run-db-and-app-separated)
 <!--- [Test Coverage](#test-coverage) -->
 - [Technology](#Technology)
 - [Programming Language](#programming-language)
@@ -62,6 +63,27 @@ Warnings:
 
 If you have another app running on port 8000 the APP wont be able to run.
 If you have another app running on port 5432 postgresSQL wont be able to run.
+
+### How to run db and app separated
+
+If you want to execute the db and the app separately. For example, dockerized
+DB with local app executing directly python manage.py.
+
+Go to this folder: db_isolated_container_to_test
+
+Then type:
+
+`docker-compose up`
+
+Now you will have a db up on host 0.0.0.0 with an exposed port of 5432.
+
+Then you just need to return to the root folder and type:
+
+`python manage.py runserver`
+
+or
+
+`gunicorn mysite.wsgi`
 <!--
  ### Test Coverage
 

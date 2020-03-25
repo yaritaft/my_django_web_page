@@ -1,0 +1,12 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:11.4-alpine
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypass
+      POSTGRES_DB: my_django_page_2
+      POSTGRES_HOST_AUTH_METHOD: trust
