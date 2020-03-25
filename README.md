@@ -19,17 +19,18 @@
 
 #### Context:
 
-The idea of this repository is to show how my web is built.
-
-Tests and furthers features will be added.
+The idea of this repository is to show how my web was built and how can you
+clone the repository in order to execute the APP and try it yourself.
 
 ### PreRequisites
 
-Python 3.8.0 installed.
-Pip 3 installed.
-Docker+Docker-composed installed and with non sudo need to execute dockerfiles.
+- Python 3.8.0 installed.
+- Pip 3 installed.
+- Docker+Docker-composed installed and with non sudo need to execute dockerfiles.
 (https://docs.docker.com/install/linux/linux-postinstall/)
-PostgreSQL NON installed (or at least not running as daemon)
+- PostgreSQL NON installed (or at least not running as daemon)
+- Linux is desirable because if you have that OS you can directly execute the 
+.sh scripts and run the app very easily.
 
 ### Installation
 
@@ -37,7 +38,7 @@ Open a terminal with git installed:
 
 `git clone https://github.com/yaritaft/my_django_web_page.git`
 
-### How to run the APP (in linux)
+### How to run the APP
 
 Warning: If you can't execute do chmod 777 over both sh files.
 
