@@ -3,6 +3,7 @@ venv/
 env/
 .env
 local_test_data/
+.vscode/
 
 #cache
 *__pycache__*
