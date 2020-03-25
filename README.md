@@ -26,8 +26,9 @@ Tests and furthers features will be added.
 
 Python 3.8.0 installed.
 Pip 3 installed.
-Docker installed and with non sudo need to execute dockerfiles.
-PostgreSQL installed on your computer.
+Docker+Docker-composed installed and with non sudo need to execute dockerfiles.
+(https://docs.docker.com/install/linux/linux-postinstall/)
+PostgreSQL NON installed (or at least not running as daemon)
 
 ### Installation
 
@@ -35,13 +36,11 @@ Open a terminal with git installed:
 
 `git clone https://github.com/yaritaft/my_django_web_page.git`
 
-### How to run the APP
+### How to run the APP (in linux)
 
 Inside the project's folder:
 
-To build the image:
-
-`docker build -t my_web_django_app .`
+` build -t my_web_django_app .`
 
 Then you can run it by typing:
 

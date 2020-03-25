@@ -13,7 +13,6 @@ import os
 from dotenv import load_dotenv
 import dj_database_url
 
-
 load_dotenv()
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -168,6 +167,7 @@ STATICFILES_FINDERS = [
     # "django.contrib.staticfiles.finders.AppDirectoriesFinder",
 ]
 
+# Logging settings
 if DEBUG is not True:
     LOGGING = {
         "version": 1,
