@@ -2,6 +2,7 @@
 venv/
 env/
 .env
+./local_test_data
 
 #cache
 *__pycache__*
