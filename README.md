@@ -7,7 +7,8 @@
 - [PreRequisites](#PreRequisites)
 - [Installation](#Installation)
 - [How to run the APP](#how-to-run-the-app)
-- [Test Coverage](#test-coverage)
+- [How to stop the APP](#how-to-stop-the-app)
+<!--- [Test Coverage](#test-coverage) -->
 - [Technology](#Technology)
 - [Programming Language](#programming-language)
 - [Dependencies](#Dependencies)
@@ -38,26 +39,29 @@ Open a terminal with git installed:
 
 ### How to run the APP (in linux)
 
+Warning: If you can't execute do chmod 777 over both sh files.
+
 Inside the project's folder:
 
-` build -t my_web_django_app .`
+`./auto_test_run.sh`
 
-Then you can run it by typing:
+If everything went right, you should see a result like this one:
 
-`docker run --network host my_web_django_app`
+![](https://github.com/yaritaft/my_django_web_page/blob/master/mysite/documentation/app_running.png)
 
-You should see this in your console:
+The last thing you have to do is to:
 
-![](https://github.com/yaritaft/my_django_web_page/blob/master/documentation/app_running.png)
+Control + Right Click over the IP shown in the console.
 
-Then control + right click on 127.0.0.1:8000 and you will be able to see the
-web app running.
+### How to stop the APP
+
+`./auto_test_shutdown.sh`
 
 Warnings:
 
 If you have another app running on port 8000 the APP wont be able to run.
 If you have another app running on port 5432 postgresSQL wont be able to run.
-
+<!--
  ### Test Coverage
 
 **Build  in Travis**
@@ -74,9 +78,9 @@ In order to reproduce test coverage follow these commands:
 
 `coverage run test.py`
 
-`coverage report` -->
+`coverage report` 
 
-<!-- #### Results
+ #### Results
 
 ![](https://github.com/yaritaft/intive/blob/master/images/coverage_report.PNG)
  -->
@@ -90,7 +94,7 @@ Django version 3.0
 
 #### Dependencies 
 
-Dependencies can also be found in requirements.txt.
+Dependencies can be found in requirements.txt.
 
 ### Standards
 
@@ -105,7 +109,7 @@ deploy quickly without setting a lot of things.
 The whole app was dockerized. So it would be easy to deploy it in other cloud
 services if it is necessary.
 
-And the DB is a postgres SQL DB (non container).
+And the DB is a postgres SQL DB (non container in production).
 
 
 ### Author
