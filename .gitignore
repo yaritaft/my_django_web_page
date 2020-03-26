@@ -10,3 +10,5 @@ local_test_data/
 .directory
 *cli_ve/*
 cli-ve/*
+.coverage
+.coveralls.yml

@@ -14,8 +14,8 @@ class BookTag(models.Model):
 
 class Book(models.Model):
     title = models.CharField(max_length=300, null=False)
-    created_date = models.DateTimeField(null=False, blank=True)
-    updated_date = models.DateTimeField(null=True, blank=True)
+    created_date = models.DateTimeField(null=False, blank=True, default=now)
+    updated_date = models.DateTimeField(null=False, blank=True, default=now)
     summary = models.TextField(null=False)
     rate = models.IntegerField(choices=EnumBookRates.book_rates(), null=False)
     tags = models.ManyToManyField(BookTag, related_name="book_tags")
