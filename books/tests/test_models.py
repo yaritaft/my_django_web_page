@@ -1,9 +1,8 @@
 from django.test import TestCase
 from books.models import Book, BookTag
 from django.db import IntegrityError
-from django.utils.timezone import now
 from books.views import from_query_set_to_dict
-
+from books.tests.base_cases import book_case_1, book_case_2_dict
 
 class BookTagTestCase(TestCase):
     def setUp(self):
@@ -34,27 +33,11 @@ class BookTagTestCase(TestCase):
 
 class BookTestCase(TestCase):
     def setUp(self):
-        self.book_1=Book(
-            title='my_test_book',
-            created_date=now(),
-            updated_date=now(),
-            summary="Lorem ipsum ha ha ha",
-            rate=9,
-            link='http://127.0.0.1',
-            author='Freddy Krugger',
-            edition='3rd'
-        )
+        self.book_1=book_case_1
         self.book_1.save()
         self.book_tag_3 = BookTag(keyword='horror')
         self.book_tag_3.save()
-        self.book_2_dict={
-            "title": 'my_test_book_v2',
-            "summary": "_v2Lorem ipsum ha ha ha",
-            "rate": 9,
-            "link": 'http://127.0.0.1',
-            "author": '_v2Freddy _v2Krugger',
-            "edition": '_v23rd'
-        }
+        self.book_2_dict=book_case_2_dict
         self.book_2=Book(**self.book_2_dict)
 
     def test_print_book(self):

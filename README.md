@@ -84,20 +84,8 @@ Then you just need to return to the root folder and type:
 or
 
 `gunicorn mysite.wsgi`
-<!--
- ### Test Coverage
 
-**Build  in Travis**
-
-[![Build Status](https://travis-ci.org/yaritaft/intive.svg?branch=master)](https://travis-ci.org/yaritaft/intive)
-
-**Results in coveralls**
-
-[![Coverage Status](https://coveralls.io/repos/github/yaritaft/intive/badge.svg)](https://coveralls.io/github/yaritaft/intive)
-
-In order to reproduce test coverage follow these commands:
-
-`pip install --trusted-host pypi.python.org -r requirements.txt`
+### Test Coverage
 
 `coverage run test.py`
 
@@ -105,8 +93,9 @@ In order to reproduce test coverage follow these commands:
 
  #### Results
 
-![](https://github.com/yaritaft/intive/blob/master/images/coverage_report.PNG)
- -->
+![](https://github.com/yaritaft/my_django_web_page/blob/master/mysite/documentation/test_coverage_1.png)
+
+![](https://github.com/yaritaft/my_django_web_page/blob/master/mysite/documentation/test_coverage_2.png)
 
 ### Technology
 

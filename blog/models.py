@@ -4,7 +4,6 @@ from django.core.exceptions import ValidationError
 from django.utils.timezone import now
 
 
-# Create your models here.
 class Role(models.Model):
     name = models.CharField(max_length=30)
 
