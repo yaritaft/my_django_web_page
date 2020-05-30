@@ -1,209 +1,280 @@
 {% extends "common_resources/base.html" %}
 {% load static %}
 {% block content %}
-  <div class="container">        
-      <section>
-        <div>
-          <div class="row-cv">
-            <div class="column-cv-left">
-              <div><img src="{% static "cv/images/DSC4523.jpg" %}" alt="avatar" class="avatar" id="profile_pic"></div>
-            </div> <!-- end column cv -->
-            <div class="column-cv-center">
-              <div class="my-name">Yari Ivan Taft</div>
-              <div class="my-title">Full-stack developer</div>
-              <div class="links">
-                <div class="link-item">
-                  <svg class="icon" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg>
-                  <a href="http://github.com/yaritaft" class="link-text">github.com/yaritaft</a>
-                </div> <!-- end link-item -->
+  <div class="container">
+    <section>
+      <div>
+        <div class="row-cv">
+          <div class="column-cv-left">
+            <div><img src="{% static "cv/images/DSC4523.jpg" %}" alt="avatar" class="avatar" id="profile_pic"></div>
+          </div> <!-- end column cv -->
+          <div class="column-cv-center">
+            <div class="my-name">Yari Ivan Taft</div>
+            <div class="my-title">Full-stack developer</div>
+            <div class="links">
+              <div class="link-item">
+                <svg class="icon" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" />
+                  </svg>
+                <a href="http://github.com/yaritaft" class="link-text">github.com/yaritaft</a>
+              </div> <!-- end link-item -->
               </br>
-                <div class="link-item">
-                  <svg class="icon" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1664 1504v-768q-32 36-69 66-268 206-426 338-51 43-83 67t-86.5 48.5-102.5 24.5h-2q-48 0-102.5-24.5t-86.5-48.5-83-67q-158-132-426-338-37-30-69-66v768q0 13 9.5 22.5t22.5 9.5h1472q13 0 22.5-9.5t9.5-22.5zm0-1051v-24.5l-.5-13-3-12.5-5.5-9-9-7.5-14-2.5h-1472q-13 0-22.5 9.5t-9.5 22.5q0 168 147 284 193 152 401 317 6 5 35 29.5t46 37.5 44.5 31.5 50.5 27.5 43 9h2q20 0 43-9t50.5-27.5 44.5-31.5 46-37.5 35-29.5q208-165 401-317 54-43 100.5-115.5t46.5-131.5zm128-37v1088q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-1088q0-66 47-113t113-47h1472q66 0 113 47t47 113z"/></svg>
-                  <a href="mailto:yari.taft@gmail.com" class="link-text">yari.taft@gmail.com</a>
-                </div> <!-- end link-item -->
-              </div> <!-- end links -->
-            </div> <!-- end column cv -->
-          </div> <!-- end row cv -->
-          <div class="column-cv-right">
-            <p>I am really curious and I love learning new things. I am really interested in social skills and communication and I enjoy teaching how to do things that I like. That is why I am a member of a community of practice wherewe share our passion for automation and analytics.</p>
-          </div>
+              <div class="link-item">
+                <svg class="icon" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1664 1504v-768q-32 36-69 66-268 206-426 338-51 43-83 67t-86.5 48.5-102.5 24.5h-2q-48 0-102.5-24.5t-86.5-48.5-83-67q-158-132-426-338-37-30-69-66v768q0 13 9.5 22.5t22.5 9.5h1472q13 0 22.5-9.5t9.5-22.5zm0-1051v-24.5l-.5-13-3-12.5-5.5-9-9-7.5-14-2.5h-1472q-13 0-22.5 9.5t-9.5 22.5q0 168 147 284 193 152 401 317 6 5 35 29.5t46 37.5 44.5 31.5 50.5 27.5 43 9h2q20 0 43-9t50.5-27.5 44.5-31.5 46-37.5 35-29.5q208-165 401-317 54-43 100.5-115.5t46.5-131.5zm128-37v1088q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-1088q0-66 47-113t113-47h1472q66 0 113 47t47 113z" />
+                  </svg>
+                <a href="mailto:yari.taft@gmail.com" class="link-text">yari.taft@gmail.com</a>
+              </div> <!-- end link-item -->
+            </div> <!-- end links -->
+          </div> <!-- end column cv -->
+        </div> <!-- end row cv -->
+        <div class="column-cv-right">
+          <p>I am really curious and I love learning new things. I am really interested in social skills and
+            communication and I enjoy teaching how to do things that I like. That is why I am a member of a community of
+            practice wherewe share our passion for automation and analytics.</p>
         </div>
-      
-      </section>
-  
-  
-      <section>
-        <div class="section-title">Experience</div>
+      </div>
+
+    </section>
+
+
+    <section>
+      <div class="section-title">Experience</div>
+      <div>
+        <div class="job">
+          <div class="job-title-container">
+            <div>
+              <div class="job-company">Intive</div>
+              <div class="job-title">Full Stack Developer
+                </br>
+                Customer: Nubi (Fintech)
+              </div>
+            </div>
+            <div>
+              Feb-2020 - Present
+            </div>
+          </div> <!-- end job-title container -->
+          <p>Responsibilities:
+            <ul>
+              <li>- Develop and maintain microservices</li>
+              <li>- Rest APIs with Flask</li>
+              <li>- Backend for frontend with NodeJS</li>
+              <li>- Event processing with RabbitMQ</li>
+              <li>- Deployment with AWS</li>
+              <li>- Persistency with MongoDB and PostgreSQL</li>
+              <li>- Automation with Bash Scripting</li>
+              <li>- Integration testing</li>
+            </ul>
+
+          </p>
+          <u>Tools:</u> Flask, Python, NodeJS, RabbitMQ, Docker, MongoDB, Redis, PostgreSQL, Bash <br>
+          <u>Methodology:</u> SCRUM, TDD
+          </p>
+        </div> <!-- end job -->
+        <div class="job">
+          <div class="job-title-container">
+            <div>
+              <div class="job-company">Intive</div>
+              <div class="job-title">Full Stack Developer
+                </br>
+                Customer: Captec (Venture Capital)
+              </div>
+            </div>
+            <div>
+              Oct-2018 - Feb-2020
+            </div>
+          </div> <!-- end job-title container -->
+          <p>Responsibilities:
+            <ul>
+              <li>-Server side rendering the web app.</li>
+              <li>-Data modeling though Django ORM.</li>
+              <li>-ETL information from different APIs such as Google Calendar, Salesloft and Salesforce.</li>
+              <li>-Deployment through Heroku.</li>
+              <li>-Handle asynchronous tasks using Celery an Redis as message broker.</li>
+              <li>-Add dynamic behaviour using Vanilla Javascript (Chart JS, Bootstrap grid Tables, etc).</li>
+            </ul>
+            <u>Tools:</u> Python, Django, Flask, PostgreSQL, Redis, Celery, Heroku, Javascript, Bootstrap
+            <br>
+            <u>Methodology:</u> SCRUM
+          </p>
+        </div> <!-- end job -->
+        <div class="job">
+          <div class="job-title-container">
+            <div>
+              <div class="job-company">ExxonMobil</div>
+              <div class="job-title">Full Stack Developer</div>
+            </div>
+            <div>
+              Aug-2018 - Oct 2018
+            </div>
+          </div> <!-- end job-title container -->
+          Accomplishments:</br>
+          -Made an ETL process that using API's centralizes data into a datalake.</br>
+          -Speeded up data quality tasks from months to days by creating processes.</br>
+          -Reduced the company Network support expenses by 12% by making a more accurate network inventory.</br>
+          -Automated the Network Inventory process that used to be manual.</br>
+          -Made a Python training to teach how to handle data with Pandas and Seaborn.</br></br>
+          <u>Tools:</u> Python, Flask, Javascript, HTML, CSS, SQL Server, Power BI, GitLab, Openshift, Visio
+          <br>
+          <u>Methodology:</u> SCRUM
+          <br><br>
+          Responsibilities:
+          <ul>
+            <li>- Generate web apps to gather structured data by forms and external APIs.</li>
+            <li>- Make dashboards and reporting</li>
+            <li>- Keep data quality as accurate and completed as possible</li>
+            <li>- Perform ETL tasks</li>
+            <li>- Automate manual processes</li>
+            <li>- Document the solution and data model</li>
+          </ul>
+        </div> <!-- end job -->
         <div>
           <div class="job">
             <div class="job-title-container">
               <div>
-                <div class="job-company">Intive</div>
-                <div class="job-title">Software Engineer </br>Customer: Nubi (Fintech)</div>
+                <div class="job-company">Fravega - Contractor</div>
+                <div class="job-title">Full Stack Developer</div>
               </div>
               <div>
-                Feb-2020 - Present
+                Dec-2016 - Feb-2020
               </div>
             </div> <!-- end job-title container -->
-            <p>Responsibilities:</br>
-                -Develop and maintain microservices and APIs with Flask..</br>
-                -Event processing with RabbitMQ.</br>
-                -Persistency with MongoDB and PostgreSQL.</br>
-                -Integration testing.</br>
-                </p>
-            <u>Tools:</u> Python (Flask Framework), NodeJS, RabbitMQ, Mongo, Postgres, Docker <u>Methodology:</u> Agile, TDD</p>
+            Accomplishments:
+            <ul>
+              <li>- Avoided recurrent time-demanding tasks by automating backoffice processes.</li>
+              <li>- Increased information security by automating backups and database updates.</li>
+              <li>- Increased maintainability by parameterizing defaulter system so we can split logic and data.</li>
+              <li>- Reduced by 80% the number of issues related to config files, by setting up automatic tests to check
+                compliance before going into production.</li>
+            </ul>
+            <u>Tools:</u> Python, Flask, Bash Scripting, SQL (Oracle, Postgres, MySQL), Javascript, PHP
+            </br></br>
+            Responsibilities:
+            <ul>
+              <li>- Develop the designed solution</li>
+              <li>- Add features to a billing system</li>
+              <li>- Solve Bugs</li>
+              <li>- Reporting and query solving</li>
+              <li>- Generate new views and stored procedures</li>
+              <li>- Check integrity between databases</li>
+              <li>- Talk to clients to get the use cases that driver the software design and documentation.</li>
+              <li>- User Acceptance Testing</li>
+              <li>- Documentation and runbooks</li>
+            </ul>
           </div> <!-- end job -->
-          <div class="job">
-            <div class="job-title-container">
-              <div>
-                <div class="job-company">Intive</div>
-                <div class="job-title">Software Engineer </br>Customer: Captec (Venture Capital)</div>
-              </div>
-              <div>
-                Oct-2018 - Feb-2020
-              </div>
-            </div> <!-- end job-title container -->
-            <p>Responsibilities:</br>
-                -Server side rendering the web app.</br>
-                -Data modeling though Django ORM.</br>
-                -ETL information from different APIs such as Google Calendar, Salesloft and Salesforce.</br>
-                -Deployment through Heroku.</br>
-                -Handle asynchronous tasks using Celery an Redis as message broker.</br>
-                -Add dynamic behaviour using Vanilla Javascript (Chart JS, Bootstrap grid Tables, etc).
-            </p>
-            <u>Tools:</u> Python (Django Framework), Javascript, Postgre SQL, Heroku, Github <u>Methodology:</u> Agile</p>
-          </div> <!-- end job -->
-          <div class="job">
-              <div class="job-title-container">
-                <div>
-                  <div class="job-company">ExxonMobil</div>
-                  <div class="job-title">ETL Developer - Data Engineer</div>
-                </div>
-                <div>
-                  Aug-2018 - Oct 2018
-                </div>
-              </div> <!-- end job-title container -->
-              <p>Accomplishments:</br>
-                  -Made an ETL process that using API's centralizes data into a datalake.</br>
-                  -Speeded up data quality tasks from months to days by creating processes.</br>
-                  -Reduced the company Network support expenses by 12% by making a more accurate network inventory.</br>
-                  -Automated the Network Inventory process that used to be manual.</br>
-                  -Made a Python training to teach how to handle data with Pandas and Seaborn.</br></br>
-                  <u>Tools:</u> Python, SQL Server, Power BI, GitLab, Visio <u>Methodology:</u> Agile</p>
-            </div> <!-- end job -->
-        <div>
-          <div class="job">
-            <div class="job-title-container">
-              <div>
-                <div class="job-company">Self Employed</div>
-                <div class="job-title">IT Consultant</div>
-              </div>
-              <div>
-                Dec-2017 - Present
-              </div>
-            </div> <!-- end job-title container -->
-            <p>Main Customer: Fravega</br>
-              Accomplishments:</br>
-              -Reduced by 80% the number of issues related to config files, I achieved that by setting up automatic tests to check compliance before going to production.</br>
-              -Automated reports, logs, backups, database updates and mailing.</br></br>
-              <u>Tools:</u> Python, Bash, Oracle SQL, MySQL, Javascript, PHP</p>
-          </div> <!-- end job -->
-  
+
           <div class="job">
             <div class="job-title-container">
               <div>
                 <div class="job-company">El Cronista Comercial</div>
-                <div class="job-title">Functional Analyst</div>
+                <div class="job-title">Back End Developer</div>
               </div>
               <div>
                 Mar 2018 - Aug 2018
               </div>
             </div> <!-- end job-title container -->
             <p>Accomplishments:</br>
-                -Fixed a bug which was skipping shipping payment, avoiding money leaks.</br>
-                -Fixed a tax bug to avoid the company from being charged a huge penalty fee.</br></br>
-                <u>Tools:</u> SQL Server, Javascript, Great Plains 9 (ERP)</p>
+              -Fixed a bug which was skipping shipping payment, avoiding money leaks.</br>
+              -Fixed a tax bug to avoid the company from being charged a huge penalty fee.</br></br>
+              <u>Tools:</u> Javascript, NodeJS, SQL Server, Great Plains (Microsoft ERP)</p>
+            Responsibilities:
+            <ul>
+              <li>- Reporting and query solving</li>
+              <li>- Generate new views and stored procedures</li>
+              <li>- Solve Bugs</li>
+              <li>- Check integrity between databases</li>
+              <li>- Add features to the E-commerce.</li>
+              <li>- Talk to clients to get the use cases that driver the software design and documentation.</li>
+              <li>- User Acceptance Testing</li>
+              <li>- Documentation and runbooks</li>
+            </ul>
           </div> <!-- end job -->
         </div>
-      </section>
-  
-      <section>
-        <div class="section-title">Education</div>
-  
-        <div>
-          <div class="education">
-            <div class="education-title-container">
-              <div>
-                <div class="education-company">Systems Engineer - Graduated</div>
-                <div class="education-title">Universidad Tecnologica Nacional (UTN)</div>
-              </div>
-              <div>
-                Jan 2014 - Dec 2018
-              </div>
-        </div>
-  
-        <div>
-          <div class="education">
-            <div class="education-title-container">
-              <div>
-                <div class="education-company">First Certificate Exam</div>
-                <div class="education-title">University of Cambridge</div>
-              </div>
-              <div>
-                Dec 2012
-              </div>
-        </div>
-  
-        <div>
-          <div class="education">
-            <div class="education-title-container">
-              <div>
-                <div class="education-company">Data Science - Level: Advanced</div>
-                <div class="education-title">Universidad Austral</div>
-              </div>
-              <div>
-                Jun 2019
-              </div>
-        </div>
-      </section>
-      <section>
-          <div class="section-title">Technologies implemented</div>
-          <div>
-            <div class="skills-container">
-              <ul>
-                <li>Python</li>
-                <li>Javascript</li>
-                <li>Git</li>
-                <li>Bash</li>
-              </ul>
-    
-              <ul>
-                <li>HTML5</li>
-                <li>CSS</li>
-                <li>SQL</li>
-                <li>Docker</li>
-              </ul>
-    
-              <ul>
-                <li>Heroku</li>
-                <li>API</li>
-                <li>REST</li>
-                <li>Power BI</li>
-              </ul>
-            </div> <!-- end skills-container -->
-    
-         </div>
-        </section>
-        <section>
-            <div class="section-title">Languages</div>
+    </section>
+
+    <section>
+      <div class="section-title">Education</div>
+
+      <div>
+        <div class="education">
+          <div class="education-title-container">
             <div>
-              <div class="languages-container">
-                <ul>
-                  <li>English: Advanced</li>
-                  <li>Spanish: Native</li>
-                </ul>
-          </section>
-        
-  
-          <div class="download-button"><a href="https://github.com/yaritaft/my_cv/raw/master/yari_taft_cv.pdf"><img src="{% static "cv/images/download-pdf-button.png" %}" id="download_pdf_button" class="center"></a></div>
+              <div class="education-company">Systems Engineer - Graduated</div>
+              <div class="education-title">Universidad Tecnologica Nacional (UTN)</div>
+            </div>
+            <div>
+              Jan 2014 - Dec 2018
+            </div>
+          </div>
+
+          <div>
+            <div class="education">
+              <div class="education-title-container">
+                <div>
+                  <div class="education-company">First Certificate Exam</div>
+                  <div class="education-title">University of Cambridge</div>
+                </div>
+                <div>
+                  Dec 2012
+                </div>
+              </div>
+
+              <div>
+                <div class="education">
+                  <div class="education-title-container">
+                    <div>
+                      <div class="education-company">Data Science - Level: Advanced</div>
+                      <div class="education-title">Universidad Austral</div>
+                    </div>
+                    <div>
+                      Jun 2019
+                    </div>
+                  </div>
+    </section>
+    <section>
+      <div class="section-title">Technologies implemented</div>
+      <div>
+        <div class="skills-container">
+          <ul>
+            <li>Python</li>
+            <li>Javascript</li>
+            <li>Git</li>
+            <li>Bash</li>
+            <li>MongoDB</li>
+          </ul>
+
+          <ul>
+            <li>HTML5</li>
+            <li>CSS</li>
+            <li>SQL</li>
+            <li>Docker/Docker compose</li>
+            <li>Redis</li>
+          </ul>
+
+          <ul>
+            <li>Heroku</li>
+            <li>API</li>
+            <li>REST</li>
+            <li>Power BI</li>
+            <li>RabbitMQ</li>
+          </ul>
+        </div> <!-- end skills-container -->
+
+      </div>
+    </section>
+    <section>
+      <div class="section-title">Languages</div>
+      <div>
+        <div class="languages-container">
+          <ul>
+            <li>English: Advanced</li>
+            <li>Spanish: Native</li>
+          </ul>
+    </section>
+
+
+    <div class="download-button"><a href="https://github.com/yaritaft/my_cv/raw/master/yari_taft_cv.pdf"><img
+          src="{% static "cv/images/download-pdf-button.png" %}" id="download_pdf_button" class="center"></a></div>
 {% endblock content %}
