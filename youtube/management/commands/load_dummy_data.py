@@ -3,6 +3,7 @@ from books.models import BookTag, Book
 from youtube.models import YoutubeVideo
 from django.utils.timezone import now
 
+
 class Command(BaseCommand):
     def handle(self, *args, **options):
         new_book_tag = BookTag.objects.get_or_create(keyword="python")[0]
@@ -10,13 +11,13 @@ class Command(BaseCommand):
 
         new_book = Book.objects.get_or_create(
             title='Lorem ipsum',
-            created_date = now(),
-            updated_date = now(),
-            summary = "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
-            rate = 9,
-            link = "crazy link",
-            author = 'Adam Linc',
-            edition = '3rd'
+            created_date=now(),
+            updated_date=now(),
+            summary="Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+            rate=9,
+            link="crazy link",
+            author='Adam Linc',
+            edition='3rd'
 
         )[0]
         new_book.save()
