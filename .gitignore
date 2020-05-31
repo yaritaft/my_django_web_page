@@ -12,3 +12,6 @@ local_test_data/
 cli-ve/*
 .coverage
 .coveralls.yml
+
+# docker compose
+docker-compose.yml
